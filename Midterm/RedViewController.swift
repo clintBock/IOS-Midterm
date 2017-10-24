@@ -9,10 +9,12 @@
 import UIKit
 
 class RedViewController: UIViewController {
-
+    
+    @IBOutlet weak var variableLabel: UILabel!
+    var variable : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        variableLabel.text = variable
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +22,9 @@ class RedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    @IBAction func unwindToRed(segue: UIStoryboardSegue) {
+        
+    }
     /*
     // MARK: - Navigation
 

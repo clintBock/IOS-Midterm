@@ -20,7 +20,9 @@ class GreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func unwindToGreen(segue: UIStoryboardSegue) {
+        
+    }
 
     /*
     // MARK: - Navigation
